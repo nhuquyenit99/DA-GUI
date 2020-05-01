@@ -57,11 +57,20 @@ $("#arc-slider").roundSlider({
   max: 90,
   startAngle: 45,
   editableTooltip: true,
-  radius: 350,
+  radius: 240,
   width: 6,
   handleSize: "+32",
   tooltipFormat: function (args) {
-      return args.value;
+      return args.value + '&#176;';
   }
 });
+
+$(function() {
+  $('.set-servo-manual').hide() 
+  $('#set-mode').change(function() {
+    if ($(this).prop('checked'))
+      $('.set-servo-manual').hide()
+    else $('.set-servo-manual').show()
+  })
+})
 

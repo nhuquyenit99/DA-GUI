@@ -45,17 +45,26 @@ h3 {
 .bg-green{
   background-color: green;
 }
-
+.menu-info{
+  margin-top: 36px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 
+              0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
 #arc-slider {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   height: 110px !important;
-  width: 500px !important;
+  width: 400px !important;
   border: 1px dashed;
   overflow: hidden;
   padding: 15px;
   margin-top: 35px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 
+              0 25px 50px 0 rgba(0, 0, 0, 0.1);
 }
 #arc-slider .rs-container {
-  margin-left: -350px; /* here 300 is the radius value */
+  margin-left: -240px; /* here 240 is the radius value */
   left: 50%;
 }
 #arc-slider .rs-tooltip {
@@ -88,10 +97,16 @@ h3 {
   color: white;
   font-size: 18px;
   font-weight: bold;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 700px){
   .schedule-title{
     padding-top: 50px;
+  }
+  #arc-slider {
+    width: 330px !important;
   }
 } 
 
